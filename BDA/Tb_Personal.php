@@ -37,6 +37,7 @@ if (isset($_POST["Cadastrar"])):
     $tel = $_POST['telefone'];
     $cref = $_POST['CREF'];
 
+
     $selectBD = mysqli_query($conexao, "INSERT INTO `tb_personais` VALUES (Null,'$nome','$email','$tel','$cref')");
 endif;
 
